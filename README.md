@@ -1,7 +1,5 @@
 # ecash-sdk-core (Rust)
 
-[![Crates.io](https://img.shields.io/crates/v/ecash-sdk-core.svg)](https://crates.io/crates/ecash-sdk-core)
-[![Documentation](https://docs.rs/ecash-sdk-core/badge.svg)](https://docs.rs/ecash-sdk-core)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 **The Official Server-Side SDK for the EasyCash Protocol (Rust Edition).**
