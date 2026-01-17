@@ -1,0 +1,59 @@
+[package]
+name = "ecash-sdk-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["EasyCash Team"]
+description = "The Official Server-Side SDK for the EasyCash Protocol (Rust)"
+license = "MIT"
+repository = "https://github.com/useeasycash/ecash-sdk-core-rust"
+homepage = "https://useeasy.cash"
+documentation = "https://docs.rs/ecash-sdk-core"
+
+[dependencies]
+# Async runtime
+tokio = { version = "1.35", features = ["full"] }
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Error handling
+thiserror = "1.0"
+anyhow = "1.0"
+
+# Cryptography
+sha2 = "0.10"
+hex = "0.4"
+k256 = { version = "0.13", features = ["ecdsa", "sha256"] }
+
+# UUID
+uuid = { version = "1.6", features = ["v4", "serde"] }
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Caching
+dashmap = "5.5"
+
+# Regex
+regex = "1.10"
+
+# Lazy static
+lazy_static = "1.4"
+
+# Async trait
+async-trait = "0.1"
+
+[dev-dependencies]
+tokio-test = "0.4"
+mockall = "0.12"
+rand = "0.8"
+
+[lib]
+name = "ecash_sdk_core"
+path = "src/lib.rs"
+
+[[example]]
+name = "simple_transfer"
+path = "examples/simple_transfer.rs"
